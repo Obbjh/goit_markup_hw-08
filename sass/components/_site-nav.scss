@@ -1,9 +1,22 @@
 .site-nav {
     display: flex;
     align-items: center;
+    width: 480px;
+    justify-content: space-between;
 
     &__accent{
         color: var(--accent-color);
+    }
+
+    &__button {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        width: 40px;
+        height: 40px;
     }
 
     &__list {
@@ -77,4 +90,32 @@
 
 .site-nav__list .site-nav__link.site-nav__link--current {
     color: var(--accent-color)
+}
+
+.site-nav__button .icon-cross {
+    display: none;
+}
+
+.site-nav__button.is-open .icon-cross {
+    display: block;
+}
+
+.site-nav__button.is-open .icon-menu {
+    display: none;
+}
+
+.site-nav__menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background-color: var(--primary-white-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+
+    &.is-open {
+        display: block;
+    }
 }
