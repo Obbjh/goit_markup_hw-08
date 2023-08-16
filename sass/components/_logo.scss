@@ -1,0 +1,22 @@
+.site-nav__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            color: var(--accent-color);
+        }
+}

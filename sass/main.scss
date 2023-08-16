@@ -1,0 +1,29 @@
+// base colors and styles
+@import "./utils/variables";
+
+// base presets
+@import "./base/base";
+
+// components
+@import "./components/page-header";
+@import "./components/site-nav";
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/work";
+@import "./components/team";
+@import "./components/user-box";
+@import "./components/clients";
+@import "./components/footer-contacts";
+@import "./components/footer-logo";
+@import "./components/footer-url";
+@import "./components/subscribe-box";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/modal-box";
+@import "./components/icon-check-modal";
+@import "./components/projects";
+
+
+
