@@ -17,7 +17,6 @@ body {
 
 .flex-container {
     display: flex;
-    align-items: baseline;
 }
 
 .container {
@@ -43,9 +42,8 @@ body {
     }
 }
 
-.container-padding {
-    padding-top: 16px;
-    padding-bottom: 16px;
+.header-container {
+    height: 60px;
 }
 
 .container-nav {
@@ -97,4 +95,18 @@ footer {
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+// mobile
+
+.navigation {
+    margin-bottom: 306px;
+}
+
+.contacts {
+    margin-bottom: 64px;
+}
+
+.mobile-social {
+    margin: 0;
 }

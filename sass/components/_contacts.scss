@@ -16,12 +16,12 @@
 
     &__link:hover &__email,
     &__link:focus &__email {
-         fill: var(--accent-color);
+        fill: var(--accent-color);
     }
 
     &__link:hover &__phone,
     &__link:focus &__phone {
-         fill: var(--accent-color);
+        fill: var(--accent-color);
     }
 
     &__email {
@@ -29,7 +29,7 @@
         width: 16px;
         height: 12px;
         fill: var(--secondary-text-color);
-    
+
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,7 +44,7 @@
         width: 10px;
         height: 16px;
         fill: var(--secondary-text-color);
-    
+
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,7 +64,7 @@
         color: var(--secondary-text-color);
         display: flex;
         align-items: center;
-    
+
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,3 +76,8 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .contacts-list {
+        display: none;
+    }
+}

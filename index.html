@@ -19,22 +19,11 @@
 
   <body>
     <header class="page-header">
-      <div class="container flex-container container-padding">
+      <div class="container flex-container header-container">
         <nav class="site-nav">
           <a href="/index.html" class="site-nav__logo"
-            ><span class="site-nav__accent">Web</span>Studio</a
-          >
-          <button type="button" class="site-nav__button js-open-menu" aria-expanded="false" aria-controls="site-nav__mobile-menu">
-            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_icon"></use>
-              <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_icon"></use>
-            </svg>
-          </button>
-
-          <div class="site-nav__menu-container js-menu-container" id="site-nav__mobile-menu">
-            <button class="site-nav__button js-close-menu"></button>
-            <div class="navigation">
-              <ul class="site-nav__list">
+            ><span class="site-nav__accent">Web</span>Studio</a>
+          <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
             </li>
@@ -45,9 +34,11 @@
               <a href="" class="site-nav__link">Контакти</a>
             </li>
           </ul>
-            </div>
-            <div class="contacts">
-              <ul class="contacts-list">
+        </nav>
+
+        <!-- contacts -->
+
+        <ul class="contacts-list">
           <li class="contacts-list__item">
             <a href="mailto:info@devstudio.com." class="contacts-list__link">
               <svg class="contacts-list__email">
@@ -61,9 +52,58 @@
                 </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+
+        <!-- mobile menu -->
+
+        <button type="button" class="menu-toggle  js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_icon"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-close" href="./images/symbol-defs.svg#icon-close_icon"></use>
+              </svg>
+            </button>
+            <div class="navigation">
+              <ul class="menu">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link menu__link--current">Студія</a>
+            </li>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link">Портфоліо</a>
+            </li>
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Контакти</a>
+            </li>
+          </ul>
+            </div>
+            <div class="contacts">
+              <ul class="contacts-mobile">
+                <li class="contacts-mobile__item">
+                  <a href="tel:+380961111111" class="contacts-mobile__link">
+                    +38 096 111 11 11</a>
+                </li>
+                <li class="contacts-mobile__item">
+                   <a href="mailto:info@devstudio.com." class="contacts-mobile__link contacts-mobile__link--small-font">
+                    info@devstudio.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-social">
+              <ul class="mobile-social__list">
+                <li class="mobile-social__item">Instagram</li>
+                <li class="mobile-social__item">Twitter</li>
+                <li class="mobile-social__item">Facebook</li>
+                <li class="mobile-social__item">LinkedIn</li>
+              </ul>
             </div>
           </div>
-        </nav>
+
+          <!-- mobile menu end -->
+
       </div>
     </header>
 
