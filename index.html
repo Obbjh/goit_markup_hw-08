@@ -28,7 +28,7 @@
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+              <a href="./index.html" class="site-nav__link">Портфоліо</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакти</a>
@@ -223,6 +223,7 @@
           <ul class="team__list">
             <li class="team__item">
               <img
+                class="team__image"
                 srcset="./images/photo1-mobile-1x.jpg 1x, ./images/photo1-mobile-2x.jpg 2x"
                 src="./photo1-mobile-1x.jpg"
                 alt="фото члена команди WebStudio Ігора Дем'яненко"
@@ -273,6 +274,7 @@
             </li>
             <li class="team__item">
               <img
+                class="team__image"
                 srcset="./images/photo2-mobile-1x.jpg 1x, ./images/photo2-mobile-2x.jpg 2x"
                 src="./images/photo2-mobile-1x.jpg"
                 alt="фото члена команди WebStudio Ольги Рєпіної"
@@ -323,6 +325,7 @@
             </li>
             <li class="team__item">
               <img
+                class="team__image"
                 srcset="./images/photo3-mobile-1x.jpg 1x, ./images/photo3-mobile-2x.jpg 2x"
                 src="./images/photo3-mobile-1x.jpg"
                 alt="фото члена команди WebStudio Миколи Тарасова"
@@ -373,6 +376,7 @@
             </li>
             <li class="team__item">
               <img
+                class="team__image"
                 srcset="./images/photo4-mobile-1x.jpg 1x, ./images/photo4-mobile-2x.jpg 2x"
                 src="./images/photo4-mobile-1x.jpg"
                 alt="фото члена команди WebStudio Михайла Єрмакова"
@@ -477,7 +481,7 @@
     </main>
 
     <footer>
-      <div class="container">
+      <div class="container footer-container ">
         <div class="footer-contacts">
           <a href="/index.html" class="footer-contacts__logo"
             ><span class="footer-contacts__accent">Web</span>Studio</a
@@ -543,15 +547,15 @@
           <p class="subcribe-box__title">Підпишіться на розсилку</p>
           <form name="subcribe-box__form">
               <input type="email" class="subcribe-box__input" name="email" placeholder="E-mail" />
-            <button type="submit" class="subcribe-box__button">
-              Підписатися
+          </form>
+          <button type="submit" class="subcribe-box__button">
+              <p class="subcribe-box__text">Підписатися</p>
               <svg class="subcribe-box__icon" width="24" height="24">
                   <use
                     href="./images/symbol-defs.svg#icon-icon-send"
                   ></use>
                 </svg>
             </button>
-          </form>
         </div>
       </div>
     </footer>

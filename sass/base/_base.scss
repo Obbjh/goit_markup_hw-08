@@ -50,6 +50,13 @@ body {
     }
 }
 
+.footer-container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+}
+
 .container-nav {
     margin-left: auto;
     margin-right: auto;

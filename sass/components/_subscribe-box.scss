@@ -19,6 +19,7 @@
     &__form {
             display: block;
             align-items: center;
+            
         }
     
     &__input {
@@ -67,10 +68,25 @@
             line-height: 1, 88;
             letter-spacing: 0.96px;
         }
+        
+    &__text {
+            color: var(--primary-white-color);
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.9;
+            letter-spacing: 0.96px;
+    }    
     
     &__icon {
             fill: var(--primary-white-color);
             margin-left: 10px;
+        }
+
+        @media screen and (min-width: 768px) {
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
         }
 }
 
