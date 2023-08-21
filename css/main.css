@@ -70,6 +70,11 @@ body {
 .header-container {
   height: 60px;
 }
+@media screen and (min-width: 768px) {
+  .header-container {
+    height: 80px;
+  }
+}
 
 .container-nav {
   margin-left: auto;
@@ -166,7 +171,7 @@ footer {
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.28px;
   color: var(--primary-white-color);
 }
 .site-nav__item {
@@ -183,9 +188,9 @@ footer {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2;
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.28px;
   color: var(--primary-text-color);
   -webkit-transition-property: color;
   transition-property: color;
@@ -248,8 +253,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .site-nav__logo {
-    font-size: 26px;
-    letter-spacing: 0.78px;
+    margin-right: 88px;
   }
 }
 .site-nav__logo:hover {
@@ -257,24 +261,19 @@ footer {
 }
 
 .contacts-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-left: auto;
 }
-.contacts-list__item + .contacts-list__item {
-  margin-left: 40px;
-}
 .contacts-list__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 .contacts-list__link:hover .contacts-list__email, .contacts-list__link:focus .contacts-list__email {
   fill: var(--accent-color);
@@ -284,8 +283,6 @@ footer {
 }
 .contacts-list__email {
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
   fill: var(--secondary-text-color);
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -299,8 +296,6 @@ footer {
 }
 .contacts-list__phone {
   margin-right: 10px;
-  width: 10px;
-  height: 16px;
   fill: var(--secondary-text-color);
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -335,6 +330,20 @@ footer {
 }
 .contacts-list__item .contacts-list__link:hover, .contacts-list__item .contacts-list__link:focus {
   color: var(--accent-color);
+}
+.contacts-list__email-style {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.24px;
+}
+.contacts-list__phone-style {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.24px;
 }
 
 @media screen and (max-width: 480px) {
