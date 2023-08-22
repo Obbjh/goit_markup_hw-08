@@ -8,11 +8,6 @@
     text-align: center;
     justify-content: center;
     
-    @media (min-width: 768px) {
-            margin: 0;
-            margin-right: 74px;
-        }
-
     &__title {
             margin-top: 0;
             margin-bottom: 20px;
@@ -65,5 +60,15 @@
     &__link:focus {
             background-color: var(--url-link-hover);
         }
+
+    @media (min-width: 768px) {
+        margin: 0;
+        margin-right: 74px;
+    }
+
+    @media (min-width: 1200px) {
+        margin: 0;
+        text-align: left;
+    }
 }
 

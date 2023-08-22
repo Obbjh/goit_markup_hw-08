@@ -55,6 +55,11 @@
             transition-property: border;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            @media screen and (min-width: 1200px) {
+                min-width: 448px;
+                max-height: 40px;  
+            }
         }
     
     &__icon {
@@ -102,6 +107,11 @@
             transition-property: border, color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            @media screen and (min-width: 1200px) {
+                min-width: 448px;
+                max-height: 120px;
+            }
         }
 
     &__accent {
@@ -112,6 +122,12 @@
             line-height: 1.2;
             letter-spacing: 0.36px;
             text-decoration-line: underline;
+
+            @media screen and (min-width: 1200px) {
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.42px;
+            }
         }
 
     &__checkbox {
@@ -128,8 +144,8 @@
             background-size: 0;
             background-image: url(../images/icon-check.svg);
             transition: background-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
     &__checkbox:checked {
@@ -159,13 +175,20 @@
         }
 
     &__checktext {
-        color: #757575;
+        color: var(--secondary-text-color);
         font-family: Roboto;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         letter-spacing: 0.36px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.42px;
+            min-width: 400px;
+        }
 
     }
 
@@ -213,4 +236,9 @@
             letter-spacing: 0.03em;
             color: var(--secondary-text-color);
         }
+
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+        max-height: 581px;
+    }
 }

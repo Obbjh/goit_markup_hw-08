@@ -180,7 +180,8 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                src="./images/image1.jpg"
+                srcset="./images/image1-desktop-1x.jpg 1x, ./images/image1-desktop-2x.jpg 2x"
+                src="./images/image1-desktop-1x.jpg"
                 alt="розробка Frontend та Backend контенту"
                 width="370"
               />
@@ -192,7 +193,8 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                src="./images/image2.jpg"
+                srcset="./images/image2-desktop-1x.jpg 1x, ./images/image2-desktop-2x.jpg 2x"
+                src="./images/image2-desktop-1x.jpg"
                 alt="адаптивна верстка для пристроїв"
                 width="370"
               />
@@ -204,7 +206,8 @@
             <li class="work__item">
               <div class="work__thumb">
                 <img
-                src="./images/image3.jpg"
+                srcset="./images/image3-desktop-1x.jpg 1x, ./images/image3-desktop-2x.jpg 2x"
+                src="./images/image3-desktop-1x.jpg"
                 alt="підготовка дизайну та стилю"
                 width="370"
               />
@@ -545,7 +548,8 @@
 
         <div class="subcribe-box"> 
           <p class="subcribe-box__title">Підпишіться на розсилку</p>
-          <form name="subcribe-box__form">
+          <div class="subcribe-box__position">
+            <form name="subcribe-box__form">
               <input type="email" class="subcribe-box__input" name="email" placeholder="E-mail" />
           </form>
           <button type="submit" class="subcribe-box__button">
@@ -556,6 +560,7 @@
                   ></use>
                 </svg>
             </button>
+          </div>
         </div>
       </div>
     </footer>
