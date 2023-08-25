@@ -9,9 +9,19 @@
         background-image: linear-gradient(to right,
                  rgba(47, 48, 58, 0.40),
                  rgba(47, 48, 58, 0.40)), url("../images/hero-mobile-1x.jpg");
+
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        @media screen and (min-width: 320px) {
+                background-image: linear-gradient(to right,
+                                        rgba(47, 48, 58, 0.4),
+                                        rgba(47, 48, 58, 0.4)),
+                                url("../images/hero-mobile-1x.jpg");
+                max-width: auto;
+                min-height: auto;
+        }
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -20,14 +30,15 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
                 url("../images/hero-mobile-2x.jpg");
-                }
+                max-width: 100%;
+        }
 
         @media screen and (min-width: 768px) {
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
                 url("../images/hero-tablet-1x.jpg");
-                max-width: 768px;
+                max-width: 100%;
                 min-height: 400px;
         }
 
@@ -38,7 +49,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
                 url("../images/hero-tablet-2x.jpg");
-                max-width: 768px;
+                max-width: 100%;
                 min-height: 400px;
                 }
 
@@ -76,6 +87,13 @@
                 letter-spacing: 1.56px;
                 text-transform: uppercase;
                 color: var(--primary-white-color);
+
+        @media screen and (min-width: 320px) {
+                padding-top: 60px;
+                font-size: 18px;
+                max-width: 360px;
+                margin-bottom: 10px;
+                }
         
         @media screen and (min-width: 480px) {
                 font-size: 26px;
@@ -107,6 +125,15 @@
             background-color: var(--accent-color);
         
             border: 1px solid transparent;
+
+            @media screen and (min-width: 320px) {
+                font-size: 12px;
+                margin-bottom: 60px;
+            }
         
+        // &__position {
+        //         margin-top: auto;
+        //         margin-bottom: auto;
+        // }
     }
 }

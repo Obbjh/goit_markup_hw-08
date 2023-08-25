@@ -23,14 +23,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: auto;
+
+    @media screen and (max-width: 479px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     
     @media screen and (min-width: 480px) {
-    padding-left: 15px;
-    padding-right: 15px;
-    }
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
     }
     
     @media screen and (min-width: 768px) {
@@ -113,16 +116,29 @@ footer {
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 479px) {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    }
 }
 
 // mobile
 
 .navigation {
-    margin-bottom: 306px;
+    margin-bottom: 150px;
+    
+    @media screen and (min-width: 480px) {
+        margin-bottom: 306px;
+    }
 }
 
 .contacts {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 64px;
+    }
 }
 
 .mobile-social {

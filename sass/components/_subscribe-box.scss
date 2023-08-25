@@ -50,6 +50,10 @@
             line-height: 1, 25;
             letter-spacing: 0.48px;
 
+            @media screen and (max-width: 479px) {
+                width: 100%;
+            }
+
             @media screen and (min-width: 1200px) {
                 width: 358px;
                 margin-right: 12px;
@@ -92,6 +96,10 @@
             font-weight: 700;
             line-height: 1.9;
             letter-spacing: 0.96px;
+
+            @media screen and (max-width: 479px) {
+                font-size: 12px;
+            }
     }    
     
     &__icon {

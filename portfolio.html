@@ -21,17 +21,17 @@
 
   <body>
     <header class="page-header">
-      <div class="container flex-container">
+      <header class="page-header">
+      <div class="container flex-container header-container">
         <nav class="site-nav">
           <a href="/index.html" class="site-nav__logo"
-            ><span class="site-nav__accent">Web</span>Studio</a
-          >
+            ><span class="site-nav__accent">Web</span>Studio</a>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
+            <li class="site-nav__item site-nav__link--current">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакти</a>
@@ -44,15 +44,15 @@
         <ul class="contacts-list">
           <li class="contacts-list__item">
             <a href="mailto:info@devstudio.com." class="contacts-list__link">
-              <svg class="contacts-list__email">
+              <svg class="contacts-list__email" width="14" height="10">
                 <use href="./images/symbol-defs.svg#icon-icon-email"></use>
-              </svg>info@devstudio.com</a>
+              </svg><span class="contacts-list__email-style">info@devstudio.com</span></a>
           </li>
           <li class="contacts-list__item">
             <a href="tel:+380961111111" class="contacts-list__link">
-              <svg class="contacts-list__phone">
+              <svg class="contacts-list__phone" width="10" height="14">
                 <use href="./images/symbol-defs.svg#icon-icon-phone"></use>
-                </svg>+38 096 111 11 11</a>
+                </svg><span class="contacts-list__phone-style">+38 096 111 11 11</span></a>
           </li>
         </ul>
       </div>
@@ -268,7 +268,7 @@
     </main>
 
     <footer>
-      <div class="container flex-container">
+      <div class="container footer-container ">
         <div class="footer-contacts">
           <a href="/index.html" class="footer-contacts__logo"
             ><span class="footer-contacts__accent">Web</span>Studio</a
@@ -332,17 +332,19 @@
 
         <div class="subcribe-box"> 
           <p class="subcribe-box__title">Підпишіться на розсилку</p>
-          <form name="subcribe-box__form">
+          <div class="subcribe-box__position">
+            <form name="subcribe-box__form">
               <input type="email" class="subcribe-box__input" name="email" placeholder="E-mail" />
-            <button type="submit" class="subcribe-box__button">
-              Підписатися
+          </form>
+          <button type="submit" class="subcribe-box__button">
+              <span class="subcribe-box__text">Підписатися</span>
               <svg class="subcribe-box__icon" width="24" height="24">
                   <use
                     href="./images/symbol-defs.svg#icon-icon-send"
                   ></use>
                 </svg>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </footer>
