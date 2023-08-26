@@ -61,7 +61,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
+    height: 400px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -460,12 +461,12 @@ footer {
 .hero {
   text-align: center;
   background-color: var(--background-color);
-  max-width: 480px;
-  min-height: 400px;
+  max-width: 1600px;
+  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile-1x.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile-1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desktop-1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop-1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -475,7 +476,7 @@ footer {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile-1x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile-1x.jpg");
     max-width: auto;
-    min-height: auto;
+    min-height: 400px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -483,6 +484,7 @@ footer {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile-2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile-2x.jpg");
     max-width: 100%;
+    min-height: 400px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -505,7 +507,7 @@ footer {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desktop-1x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop-1x.jpg");
-    max-width: 1600px;
+    max-width: 100%;
     min-height: 600px;
   }
 }
@@ -513,7 +515,7 @@ footer {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desktop-2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop-2x.jpg");
-    max-width: 1600px;
+    max-width: 100%;
     min-height: 600px;
   }
 }
@@ -523,7 +525,7 @@ footer {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 250px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -531,17 +533,19 @@ footer {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 319px) {
   .hero__title {
-    padding-top: 60px;
+    padding-top: 118px;
     font-size: 18px;
-    max-width: 360px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    max-width: 300px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .hero__title {
-    font-size: 26px;
+    padding-top: 118px;
+    font-size: 18px;
+    margin-bottom: 30px;
     max-width: 360px;
   }
 }
@@ -567,12 +571,6 @@ footer {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   border: 1px solid transparent;
-}
-@media screen and (min-width: 320px) {
-  .hero__button {
-    font-size: 12px;
-    margin-bottom: 60px;
-  }
 }
 
 .features {
@@ -613,6 +611,13 @@ footer {
   grid-gap: 30px;
   padding-left: 0;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .features__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .features__item {
   fill: var(--secondary-text-color);
