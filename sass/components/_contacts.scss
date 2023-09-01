@@ -9,7 +9,7 @@
         padding-right: 0;
         padding-top: 32px;
         &__item + &__item {
-            margin-left: 40px;
+        margin-left: 40px;
         }
     }
 
@@ -101,6 +101,11 @@
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.24px;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            letter-spacing: 0.24px;
+        }
     }
 
     &__phone-style {
